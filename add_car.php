@@ -17,7 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Грешка: " . $sql . "<br>" . $conn->error;
     }
 
-    // Пренасочване обратно към главната страница
     header("Location: index.php");
     exit();
 }
